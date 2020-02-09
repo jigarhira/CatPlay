@@ -1,6 +1,5 @@
-# Pycharm
-.idea/
-
+# EAGLE files
+hardware/pcb/EAGLE/CatPlay/*.*#*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -41,7 +41,7 @@ class Servo:
 
         # Sets angle attribute and adjusts PWM for center posistion
         self.angle = 0.0
-        self._pwm.start(angle_to_dc(0.0))
+        self._pwm.start(self._angle_to_dc(0.0))
 
     def _angle_to_dc(self, angle: float) -> float:
         """
@@ -68,7 +68,7 @@ class Servo:
         self.angle = angle
 
         # Change servo position
-        self._pwm.ChangeDutyCycle(angle_to_dc(angle))
+        self._pwm.ChangeDutyCycle(self._angle_to_dc(angle))
 
 
 class Laser:
